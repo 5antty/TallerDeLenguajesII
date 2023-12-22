@@ -11,7 +11,7 @@ public class Earthquake implements Stone{
 		 if(monster.getTypes().contains(Type.SWORD)||monster.getTypes().contains(Type.ELECTRICITY)) {
 			 dmg = dmg * 2;
 		 }
-		 else if(monster.getTypes().contains(Type.SWORD)) {
+		 else if(monster.getTypes().contains(Type.DEMON)) {
 			 dmg=0;
 		 }
 		return dmg;

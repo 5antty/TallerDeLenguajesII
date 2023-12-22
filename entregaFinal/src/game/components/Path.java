@@ -37,6 +37,10 @@ public class Path {
                         if(occupiedPathBox.get().getNorthBox().getMonster().getLife() <= 0) {
                             occupiedPathBox.get().getNorthBox().setMonster(null);
                         }
+                        //Solucion a error de monstruos que ya no tienen vida
+                        if(occupiedPathBox.get().getMonster().getLife()<=0) {
+                        	occupiedPathBox.get().setMonster(null);
+                        }
                     }
                 }
             } else {
